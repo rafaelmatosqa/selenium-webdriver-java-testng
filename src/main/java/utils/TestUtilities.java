@@ -1,6 +1,8 @@
 package utils;
 
-public class TestUtilities extends BaseTest{
+import org.testng.annotations.DataProvider;
+
+public class TestUtilities extends BaseTest {
 
     protected void sleep(long millis) {
         try {
@@ -10,4 +12,14 @@ public class TestUtilities extends BaseTest{
         }
     }
 
+    @DataProvider(name = "InvalidLoginData")
+    public Object[][] getInvalidLoginData() {
+        return new Object[][]
+                {
+                        {"incorrectUsername", "SuperSecretPassword","Your username is invalid!"},
+                        {"tomsmith", "incorrectPassword","Your password is invalid!"},
+
+                };
+
+    }
 }

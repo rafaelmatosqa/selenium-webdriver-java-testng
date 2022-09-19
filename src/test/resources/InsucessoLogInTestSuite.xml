@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="InsucessoLoginTestInTestSuite" verbose="1">
+
+    <test name="InsucessoLoginTest">
+        <classes>
+            <class name="testcases.InsucessoLoginTest" />
+        </classes>
+    </test>
+
+</suite>

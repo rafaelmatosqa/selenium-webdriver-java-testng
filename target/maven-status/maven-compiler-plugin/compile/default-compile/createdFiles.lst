@@ -1,0 +1,7 @@
+pages\LoginPage.class
+utils\BaseTest.class
+pages\SecureAreaPage.class
+pages\WelcomePageObject.class
+utils\TestUtilities.class
+pages\BasePageObject.class
+utils\BrowserDriverFactory.class
