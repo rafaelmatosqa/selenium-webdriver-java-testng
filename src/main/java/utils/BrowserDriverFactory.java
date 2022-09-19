@@ -2,6 +2,7 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.apache.logging.log4j.Logger;
 
@@ -29,6 +30,13 @@ public class BrowserDriverFactory {
                 System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
                 driver.set(new FirefoxDriver());
                 break;
+
+            case "edge":
+                System.setProperty("webdriver.edge.driver", "src/main/resources/msedgedriver.exe");
+                driver.set(new EdgeDriver());
+                break;
+
+
 
             default:
                 System.out.println("Do not know how to start: " + browser + ", starting chrome.");
